@@ -1,25 +1,27 @@
 <?php
 
-namespace MichaelDrennen\Geonames\Events;
+namespace V360Tech\Geonames\Events;
 
 use Illuminate\Queue\SerializesModels;
-use MichaelDrennen\Geonames\Models\GeonamesDelete;
+use V360Tech\Geonames\Models\GeonamesDelete;
 
 /**
  * Class GeonameDeleted
- * @package MichaelDrennen\Geonames\Events
+ * @package V360Tech\Geonames\Events
  */
-class GeonameDeleted {
-    use SerializesModels;
+class GeonameDeleted
+{
+  use SerializesModels;
 
-    public $geonameDelete;
+  public $geonameDelete;
 
-    /**
-     * Create a new Event instance.
-     * GeonameDeleted constructor.
-     * @param GeonamesDelete $geonameDelete
-     */
-    public function __construct( GeonamesDelete $geonameDelete ) {
-        $this->geonameDelete = $geonameDelete;
-    }
+  /**
+   * Create a new Event instance.
+   * GeonameDeleted constructor.
+   * @param GeonamesDelete $geonameDelete
+   */
+  public function __construct(GeonamesDelete $geonameDelete)
+  {
+    $this->geonameDelete = $geonameDelete;
+  }
 }

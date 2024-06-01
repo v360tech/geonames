@@ -1,20 +1,23 @@
 <?php
-namespace MichaelDrennen\Geonames\Observers;
 
-use MichaelDrennen\Geonames\Geoname;
+namespace V360Tech\Geonames\Observers;
+
+use V360Tech\Geonames\Geoname;
 
 /**
  * Class GeonameObserver
- * @package MichaelDrennen\Geonames\Observers
+ * @package V360Tech\Geonames\Observers
  */
-class GeonameObserver {
-    /**
-     * Listen to the Geoname updated event.
-     *
-     * @param  Geoname $geoname
-     * @return void
-     */
-    public function updated ( Geoname $geoname ) {
-        //
-    }
+class GeonameObserver
+{
+  /**
+   * Listen to the Geoname updated event.
+   *
+   * @param  Geoname $geoname
+   * @return void
+   */
+  public function updated(Geoname $geoname)
+  {
+    //
+  }
 }

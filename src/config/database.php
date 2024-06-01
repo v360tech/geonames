@@ -3,7 +3,7 @@
 return [
 
 
-    /*
+  /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
     |--------------------------------------------------------------------------
@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'default' => env( 'DB_GEONAMES_CONNECTION', 'geonames' ),
+  'default' => env('DB_GEONAMES_CONNECTION', 'geonames'),
 
-    /*
+  /*
     |--------------------------------------------------------------------------
     | Database Connections
     |--------------------------------------------------------------------------
@@ -32,26 +32,26 @@ return [
     |
     */
 
-    'connections' => [
-        'geonames' => [
-            'driver'      => env( 'DB_GEONAMES_DRIVER', 'mysql' ),
-            'host'        => env( 'DB_GEONAMES_HOST', '127.0.0.1' ),
-            'port'        => env( 'DB_GEONAMES_PORT', 3306 ),
-            'database'    => env( 'DB_GEONAMES_DATABASE', 'geonames' ),
-            'username'    => env( 'DB_GEONAMES_USERNAME', 'root' ),
-            'password'    => env( 'DB_GEONAMES_PASSWORD', '' ),
-            'unix_socket' => env( 'DB_GEONAMES_SOCKET', NULL ),
-            'charset'     => 'utf8mb4',
-            'collation'   => 'utf8mb4_unicode_ci',
-            'prefix'      => '',
-            'strict'      => TRUE,
-            'engine'      => NULL,
-            //'options'     => [ \PDO::MYSQL_ATTR_LOCAL_INFILE => TRUE, ],
-            'options'     => extension_loaded( 'pdo_mysql' ) ? array_filter( [
-                                                                                 PDO::MYSQL_ATTR_SSL_CA       => env( 'MYSQL_ATTR_SSL_CA' ),
-                                                                                 PDO::MYSQL_ATTR_LOCAL_INFILE => TRUE,
-                                                                             ] ) : [],
-        ],
+  'connections' => [
+    'geonames' => [
+      'driver'      => env('DB_GEONAMES_DRIVER', 'mysql'),
+      'host'        => env('DB_GEONAMES_HOST', '127.0.0.1'),
+      'port'        => env('DB_GEONAMES_PORT', 3306),
+      'database'    => env('DB_GEONAMES_DATABASE', 'geonames'),
+      'username'    => env('DB_GEONAMES_USERNAME', 'root'),
+      'password'    => env('DB_GEONAMES_PASSWORD', ''),
+      'unix_socket' => env('DB_GEONAMES_SOCKET', NULL),
+      'charset'     => 'utf8mb4',
+      'collation'   => 'utf8mb4_unicode_ci',
+      'prefix'      => '',
+      'strict'      => TRUE,
+      'engine'      => NULL,
+      //'options'     => [ \PDO::MYSQL_ATTR_LOCAL_INFILE => TRUE, ],
+      'options'     => extension_loaded('pdo_mysql') ? array_filter([
+        PDO::MYSQL_ATTR_SSL_CA       => env('MYSQL_ATTR_SSL_CA'),
+        PDO::MYSQL_ATTR_LOCAL_INFILE => TRUE,
+      ]) : [],
     ],
+  ],
 
 ];

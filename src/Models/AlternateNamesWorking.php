@@ -1,11 +1,11 @@
 <?php
 
-namespace MichaelDrennen\Geonames\Models;
+namespace V360Tech\Geonames\Models;
 
-use MichaelDrennen\Geonames\Console\AlternateName as AlternateNameConsole;
+use V360Tech\Geonames\Console\AlternateName as AlternateNameConsole;
 
-class AlternateNamesWorking extends AlternateName {
+class AlternateNamesWorking extends AlternateName
+{
 
-    protected $table = AlternateNameConsole::TABLE_WORKING;
-
+  protected $table = AlternateNameConsole::TABLE_WORKING;
 }

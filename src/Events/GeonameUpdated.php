@@ -1,24 +1,27 @@
 <?php
 
-namespace MichaelDrennen\Geonames\Events;
+namespace V360Tech\Geonames\Events;
 
 use Illuminate\Queue\SerializesModels;
-use MichaelDrennen\Geonames\Models\Geoname;
+use V360Tech\Geonames\Models\Geoname;
+
 /**
  * Class GeonameUpdated
- * @package MichaelDrennen\Geonames\Events
+ * @package V360Tech\Geonames\Events
  */
-class GeonameUpdated {
-    use SerializesModels;
+class GeonameUpdated
+{
+  use SerializesModels;
 
-    public $geoname;
+  public $geoname;
 
-    /**
-     * Create a new Event instance.
-     * GeonameUpdated constructor.
-     * @param Geoname $geoname
-     */
-    public function __construct ( Geoname $geoname ) {
-        $this->geoname = $geoname;
-    }
+  /**
+   * Create a new Event instance.
+   * GeonameUpdated constructor.
+   * @param Geoname $geoname
+   */
+  public function __construct(Geoname $geoname)
+  {
+    $this->geoname = $geoname;
+  }
 }

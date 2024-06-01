@@ -1,11 +1,13 @@
 <?php
 
-namespace MichaelDrennen\Geonames\Tests;
+namespace V360Tech\Geonames\Tests;
 
-abstract class BaseInstallTestCase extends AbstractGlobalTestCase {
+abstract class BaseInstallTestCase extends AbstractGlobalTestCase
+{
 
-    public function setUp(): void {
-        parent::setUp();
-        $this->artisan( 'migrate', [ '--database' => $this->DB_CONNECTION, ] );
-    }
+  public function setUp(): void
+  {
+    parent::setUp();
+    $this->artisan('migrate', ['--database' => $this->DB_CONNECTION,]);
+  }
 }

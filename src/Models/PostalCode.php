@@ -1,19 +1,21 @@
 <?php
 
-namespace MichaelDrennen\Geonames\Models;
+namespace V360Tech\Geonames\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PostalCode extends Model {
+class PostalCode extends Model
+{
 
-    protected $table      = 'geonames_postal_codes';
+  protected $table      = 'geonames_postal_codes';
 
-    /**
-     * The attributes that should be casted to native types.
-     *
-     * @var array
-     */
-    protected $casts = ['latitude'   => 'double',
-                        'longitude'  => 'double',];
-
+  /**
+   * The attributes that should be casted to native types.
+   *
+   * @var array
+   */
+  protected $casts = [
+    'latitude'   => 'double',
+    'longitude'  => 'double',
+  ];
 }

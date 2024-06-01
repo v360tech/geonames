@@ -1,16 +1,18 @@
 <?php
 
-namespace MichaelDrennen\Geonames\Repositories;
+namespace V360Tech\Geonames\Repositories;
 
 use Illuminate\Support\Collection;
-use MichaelDrennen\Geonames\Models\IsoLanguageCode;
+use V360Tech\Geonames\Models\IsoLanguageCode;
 
-class IsoLanguageCodeRepository {
+class IsoLanguageCodeRepository
+{
 
-    /**
-     * @return Collection
-     */
-    public function all() {
-        return IsoLanguageCode::all();
-    }
+  /**
+   * @return Collection
+   */
+  public function all()
+  {
+    return IsoLanguageCode::all();
+  }
 }

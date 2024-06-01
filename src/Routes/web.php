@@ -3,19 +3,19 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::get( '/geonames/search-all', '\MichaelDrennen\Geonames\Controllers\GeonamesController@ajaxJquerySearchAll' );
+Route::get('/geonames/search-all', '\V360Tech\Geonames\Controllers\GeonamesController@ajaxJquerySearchAll');
 
 /**
  *
  */
-Route::get( '/geonames/{term}', '\MichaelDrennen\Geonames\Controllers\GeonamesController@test' );
+Route::get('/geonames/{term}', '\V360Tech\Geonames\Controllers\GeonamesController@test');
 
 
-Route::get( '/geonames/cities/{asciiNameTerm}', '\MichaelDrennen\Geonames\Controllers\GeonamesController@citiesUsingLocale' );
+Route::get('/geonames/cities/{asciiNameTerm}', '\V360Tech\Geonames\Controllers\GeonamesController@citiesUsingLocale');
 
-Route::get( '/geonames/{countryCode}/cities/{asciiNameTerm}', '\MichaelDrennen\Geonames\Controllers\GeonamesController@citiesByCountryCode' );
+Route::get('/geonames/{countryCode}/cities/{asciiNameTerm}', '\V360Tech\Geonames\Controllers\GeonamesController@citiesByCountryCode');
 
-Route::get( '/geonames/{countryCode}/schools/{asciiNameTerm}', '\MichaelDrennen\Geonames\Controllers\GeonamesController@schoolsByCountryCode' );
+Route::get('/geonames/{countryCode}/schools/{asciiNameTerm}', '\V360Tech\Geonames\Controllers\GeonamesController@schoolsByCountryCode');
 
 
 /**
